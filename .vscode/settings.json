@@ -1,0 +1,4 @@
+{
+    "appService.deploySubpath": ".",
+    "appService.defaultWebAppToDeploy": "/subscriptions/e7a5f138-5694-46e7-91d5-6be188b0db3a/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/BAKHITA"
+}
