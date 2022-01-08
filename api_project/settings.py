@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*k2$2)4%-kl^gufd%6-*5+j^*4gzbb$&@m@q9!bdyt4wj2cybn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'resto-v2.herokuapp.com']
 
 
 # Application definition
@@ -105,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
-    'http://localhost:8000', 'https://resto-web-api.herokuapp.com'
+    'http://localhost:8000', 'https://resto-v2.herokuapp.com'
 )
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
