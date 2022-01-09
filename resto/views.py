@@ -5,33 +5,33 @@ from resto.serializers import RestoSerializer, DishesSerializer, DistrictSeriali
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 
-
 # Create your views here.
+from rest_framework import viewsets
 
 
-class RestoListAPIView(ListAPIView):
+class RestoListAPIView(viewsets.ModelViewSet):
     queryset = Resto.objects.all()
     serializer_class = RestoSerializer
     # authentication_classes = [TokenAuthentication]
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
 
-class DishesListAPIView(ListAPIView):
+class DishesListAPIView(viewsets.ModelViewSet):
     queryset = Dishes.objects.all()
     serializer_class = DishesSerializer
     # authentication_classes = [TokenAuthentication]
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
 
-class DistrictListAPIView(ListAPIView):
+class DistrictListAPIView(viewsets.ModelViewSet):
     queryset = District.objects.all()
     serializer_class = DistrictSerializer
     # authentication_classes = [TokenAuthentication]
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
 
-class SectorListAPIView(ListAPIView):
+class SectorListAPIView(viewsets.ModelViewSet):
     queryset = Sector.objects.all()
     serializer_class = SectorSerializer
     # authentication_classes = [TokenAuthentication]
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
